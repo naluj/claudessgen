@@ -1,0 +1,147 @@
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.editor-section h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.msg-editor {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.msg-editor--user {
+  border-left: none;
+}
+
+.msg-editor--assistant {
+  border-left: none;
+}
+
+.msg-editor-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.msg-type-badge {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #999;
+}
+
+.msg-editor-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.msg-editor-actions button {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.msg-editor-actions button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.msg-editor-actions button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.delete-btn:hover:not(:disabled) {
+  background: rgba(220, 50, 50, 0.2) !important;
+  border-color: rgba(220, 50, 50, 0.3) !important;
+  color: #ff6b6b !important;
+}
+
+.editor label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.editor label span {
+  font-size: 12px;
+  color: #888;
+}
+
+.editor textarea,
+.editor input[type="text"] {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 8px 10px;
+  color: #e0e0e0;
+  font-family: inherit;
+  font-size: 14px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.editor textarea:focus,
+.editor input[type="text"]:focus {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.add-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.add-btn {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 10px;
+  color: #888;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ccc;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.checkbox-label {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 8px !important;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #e8e5e0;
+}
