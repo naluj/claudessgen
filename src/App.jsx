@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from 'react'
 import { toPng } from 'html-to-image'
+import { Analytics } from '@vercel/analytics/react'
 import ChatPreview from './components/ChatPreview'
 import Editor from './components/Editor'
 import './App.css'
@@ -132,6 +133,7 @@ export default function App() {
           </div>
         </div>
       </div>
+      <Analytics />
     </div>
   )
 }
