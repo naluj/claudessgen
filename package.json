@@ -1,8 +1,22 @@
 {
   "name": "claude-meme-generator",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "A React app for creating fake Claude-style conversation screenshots and exporting them as PNGs.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naluj/claudegen.git"
+  },
+  "homepage": "https://github.com/naluj/claudegen",
+  "keywords": [
+    "claude",
+    "meme",
+    "screenshot",
+    "generator",
+    "react",
+    "vite"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",

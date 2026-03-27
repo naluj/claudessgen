@@ -1,16 +1,47 @@
-# React + Vite
+# Claude Meme Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Create fake Claude-style conversation screenshots, tweak the thought-process drawer, and export the result as a PNG.
 
-Currently, two official plugins are available:
+![Claude Meme Generator preview](./docs/repo-preview.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What It Does
 
-## React Compiler
+This is a small React app for making polished joke screenshots that look like Claude conversations. You can edit each message, reorder the thread, add or remove assistant/user turns, customize the bottom panel, and download the final composition as an image.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+It was inspired by [this tweet from @jxnlco](https://x.com/jxnlco/status/2035406849541861499).
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Edit both user messages and Claude responses
+- Add assistant "thinking summary" rows
+- Reorder or delete conversation turns
+- Toggle and customize the bottom thought-process panel
+- Export the preview as a high-resolution PNG
+
+## Stack
+
+- React 19
+- Vite
+- `html-to-image` for PNG export
+- Phosphor icons
+
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL printed by Vite, usually `http://localhost:5173`.
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Notes
+
+- This project is a parody/mockup generator for memes and screenshots.
+- It is not affiliated with Anthropic or the Claude product team.
